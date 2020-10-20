@@ -13,7 +13,7 @@ class Shape{
 class Square extends Shape{
   constructor(sideLength){
     super(sideLength);
-    this.name = "square"; 
+    this.name = "square";
     this.sides = 4;
     this.sideLength = sideLength;
   }
@@ -22,3 +22,7 @@ class Square extends Shape{
     console.log(Math.pow(this.sideLength, 2));
   }
 }
+
+let square = new Square(5);
+square.calcPerimeter();
+square.calcArea();
